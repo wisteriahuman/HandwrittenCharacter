@@ -4,7 +4,7 @@ from torchvision import datasets, transforms
 
 def get_data_loaders(batch_size: int=64) -> tuple[DataLoader, DataLoader]:
     train_transform = transforms.Compose([
-        # transforms.RandomAffine(degrees=10, translate=(0.1, 0.1)),
+        transforms.RandomAffine(degrees=10, translate=(0.1, 0.1)),
         transforms.ToTensor(),
         transforms.Normalize(mean=(0.1307,), std=(0.3081,))
     ])
