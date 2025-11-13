@@ -9,6 +9,7 @@ dependencies = [
     "matplotlib>=3.10.7",
     "torch>=2.9.0",
     "torchvision>=0.24.0",
+    "torchvista>=0.2.6",
     "torchviz>=0.0.3",
 ]
 
